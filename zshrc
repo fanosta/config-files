@@ -54,7 +54,6 @@ plugins=(git ubuntu tmux mosh bgnotify ssh-agent sudo common-aliases)
 # User configuration
 ZSH_TMUX_AUTOSTART=true
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
