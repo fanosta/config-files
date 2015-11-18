@@ -8,7 +8,7 @@ fi
 #update package lists
 #sudo apt-get update
 #install packages
-sudo apt-get install -y zsh tmux wget vim git mosh software-properties-common python-software-properties
+sudo apt-get install -y zsh tmux wget vim git mosh dnsutils software-properties-common python-software-properties
 
 #install oh my zsh
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
