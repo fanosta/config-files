@@ -83,3 +83,4 @@ export PATH=$PATH:$GOPATH/bin
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 alias c='clear'
+alias xc='xclip -selection clipboard'
