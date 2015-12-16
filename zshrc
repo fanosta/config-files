@@ -49,7 +49,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ubuntu tmux mosh bgnotify ssh-agent sudo common-aliases)
+plugins=(git golang ubuntu tmux mosh bgnotify ssh-agent sudo common-aliases)
 
 # User configuration
 ZSH_TMUX_AUTOSTART=true
@@ -62,6 +62,8 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 export SHELL="/usr/bin/zsh"
 export EDITOR="vim"
+export GOPATH="$HOME/Dropbox/Programmieren/Go"
+export PATH=$PATH:$GOPATH/bin
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
