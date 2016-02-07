@@ -52,7 +52,8 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git golang ubuntu tmux mosh bgnotify ssh-agent sudo common-aliases)
 
 # User configuration
-ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOSTART=false
+ZSH_TMUX_AUTOQUIT=true
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -63,7 +64,7 @@ source $ZSH/oh-my-zsh.sh
 export SHELL="/usr/bin/zsh"
 export EDITOR="vim"
 export GOPATH="$HOME/Dropbox/Programmieren/Go"
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin:/sbin
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -84,3 +85,6 @@ export PATH=$PATH:$GOPATH/bin
 # For a full list of active aliases, run `alias`.
 alias c='clear'
 alias xc='xclip -selection clipboard'
+
+# attach to tmux
+ tmx 0
