@@ -26,6 +26,8 @@ export PATH=$PATH:$GOPATH/bin:/sbin
 # personal aliases
 alias c='clear'
 alias xc='xclip -selection clipboard'
+alias acshow='apt-cache show'
+alias mktex='latexmk -pdf -pdflatex="pdflatex -shell-escape %O %S" --interaction=batchmode -pvc'
 
 # attach to tmux
  tmx 0
