@@ -32,12 +32,5 @@ alias xc='xclip -selection clipboard'
 alias acshow='apt-cache show'
 alias mktex='latexmk -pdf -pdflatex="pdflatex -shell-escape %O %S" --interaction=batchmode -pvc'
 
-fulltex () {
-        pdflatex -halt-on-error -shell-escape $1 &&
-        biber $1 &&
-        pdflatex -halt-on-error -shell-escape $1 &&
-        pdflatex -halt-on-error -shell-escape $1
-}
-
 # attach to tmux
  tmx 0
