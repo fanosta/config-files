@@ -22,9 +22,9 @@ export SHELL="/usr/bin/zsh"
 export EDITOR="vim"
 export GOPATH="$HOME/Dropbox/Programmieren/Go"
 
-export PATH=$PATH:$GOPATH:/home/marcel/Android/Sdk/platform-tools
-export PATH="$HOME/.local/bin:$PATH"
-export PATH=$PATH:$GOPATH/bin:/sbin
+PATH=$PATH:$GOPATH:/home/marcel/Android/Sdk/platform-tools
+
+export PATH
 
 # personal aliases
 alias c='clear'
