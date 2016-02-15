@@ -8,7 +8,7 @@ fi
 #update package lists
 #sudo apt-get update
 #install packages
-sudo apt-get install -y zsh tmux wget vim git mosh dnsutils software-properties-common python-software-properties xclip sl
+sudo apt-get install -y zsh tmux wget curl vim git mosh dnsutils software-properties-common python-software-properties xclip sl
 
 #install oh my zsh
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
@@ -21,4 +21,5 @@ rm ~/.zshrc
 ln -s $WD/zshrc ~/.zshrc
 
 rm ~/.tmux.conf
-ln -s $WD/tmux.conf ~/.tmux.conf
+ln -s $WD/tmux.conf $HOME/.tmux.conf
+ln -s $WD/warprc $HOME/.warprc
