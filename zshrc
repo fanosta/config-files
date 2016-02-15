@@ -21,13 +21,14 @@ source $ZSH/oh-my-zsh.sh
 export SHELL="/usr/bin/zsh"
 export EDITOR="vim"
 export GOPATH="$HOME/Dropbox/Programmieren/Go"
-export PATH=$PATH:$GOPATH/bin:/sbin
+export PATH=$PATH:$GOPATH/bin:/sbin:$HOME/.local/bin
 
 # personal aliases
 alias c='clear'
 alias xc='xclip -selection clipboard'
 alias acshow='apt-cache show'
 alias mktex='latexmk -pdf -pdflatex="pdflatex -shell-escape %O %S" --interaction=batchmode -pvc'
+alias pastebin='pastebin -p | xc'
 
 # attach to tmux
  tmx 0
