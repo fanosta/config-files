@@ -23,3 +23,4 @@ ln -s $WD/zshrc ~/.zshrc
 rm ~/.tmux.conf
 ln -s $WD/tmux.conf $HOME/.tmux.conf
 ln -s $WD/warprc $HOME/.warprc
+ln -s $WD/vimrc $HOME/.vimrc
