@@ -27,7 +27,7 @@ export PATH=$PATH:$GOPATH/bin:/sbin:$HOME/.local/bin
 alias c='clear'
 alias xc='xclip -selection clipboard'
 alias acshow='apt-cache show'
-alias mktex='latexmk -pdf -pdflatex="pdflatex -shell-escape %O %S" --interaction=batchmode -pvc'
+alias mktex='latexmk -pdf -pdflatex="texfot pdflatex -file-line-error -shell-escape %O %S" -interaction=nonstopmode -pvc'
 alias pastebin='pastebin -p | xc'
 
 # attach to tmux
