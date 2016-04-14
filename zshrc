@@ -30,5 +30,14 @@ alias acshow='apt-cache show'
 alias mktex='latexmk -pdf -pdflatex="texfot pdflatex -file-line-error -shell-escape %O %S" -interaction=nonstopmode -pvc'
 alias pastebin='pastebin -p | xc'
 
+alias myip='dig +short @resolver1.opendns.com myip.opendns.com'
+function pw () {
+        strings /dev/urandom | grep --color --color -o '[[:alnum:]]' | head -n ${1:-16} | tr -d '\n'
+        echo
+}
+function maclookup() {                                                                                       
+        curl http://www.macvendorlookup.com/api/v2/$1 2>/dev/null | python -m json.tool;
+}
+
 # attach to tmux
  tmx 0
