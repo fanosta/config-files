@@ -24,3 +24,4 @@ rm ~/.tmux.conf
 ln -s $WD/tmux.conf $HOME/.tmux.conf
 ln -s $WD/warprc $HOME/.warprc
 ln -s $WD/vimrc $HOME/.vimrc
+sudo ln -s  $WD/tmx /bin/tmx
