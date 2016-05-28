@@ -6,16 +6,10 @@ ZSH_THEME="agnoster"
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git golang ubuntu tmux mosh bgnotify ssh-agent sudo common-aliases wd)
+plugins=(git ubuntu bgnotify ssh-agent common-aliases)
 
 # faster cd based on directory access "frecency"
 . ~/config-files/z/z.sh
-
-# User configuration
-ZSH_TMUX_AUTOSTART=false
-ZSH_TMUX_AUTOQUIT=true
-
-# export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
