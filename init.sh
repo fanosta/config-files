@@ -32,4 +32,6 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vi
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 chsh -s $(which zsh)
 
+ssh-keygen -t 'ed25519'
+
 $WD/change-hostname.sh
