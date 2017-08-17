@@ -21,9 +21,10 @@ export CDPATH='/home/marcel/Dropbox/tu/sem3/:/home/marcel/Dropbox/tu/sem2/:/home
 # personal aliases
 alias c='clear'
 alias xc='xclip -selection clipboard'
-alias mktex='latexmk -pdf -pdflatex="texfot pdflatex -file-line-error -shell-escape %O %S" -interaction=nonstopmode -pvc'
+alias mktex='latexmk -pdf -pdflatex="texfot pdflatex -file-line-error -shell-escape %O %S" -interaction=batchmode -pvc'
 alias psgrep='ps aux | head -n 1; ps aux | grep -v grep | grep $1'
 alias cdtmp='cd $(mktemp -d)'
+alias gpg='gpg2'
 
 alias myip='dig +short @resolver1.opendns.com myip.opendns.com'
 function pw () {
