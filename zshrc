@@ -25,6 +25,7 @@ alias mktex='latexmk -pdf -pdflatex="texfot pdflatex -file-line-error -shell-esc
 alias psgrep='ps aux | head -n 1; ps aux | grep -v grep | grep $1'
 alias cdtmp='cd $(mktemp -d)'
 alias gpg='gpg2'
+alias w='source ~/config-files/watch.sh'
 
 alias myip='dig +short @resolver1.opendns.com myip.opendns.com'
 function pw () {
