@@ -7,6 +7,7 @@ ZSH_THEME="agnoster"
 COMPLETION_WAITING_DOTS="true"
 
 plugins=(git ubuntu bgnotify ssh-agent common-aliases)
+DEFAULT_USER=marcel
 
 source $ZSH/oh-my-zsh.sh
 
@@ -16,7 +17,7 @@ export SHELL="/usr/bin/zsh"
 export EDITOR="vim"
 export GOPATH="$HOME/Dropbox/Programmieren/Go"
 export PATH=$PATH:$GOPATH/bin:/sbin:$HOME/.local/bin
-export CDPATH='/home/marcel/Dropbox/tu/sem3/:/home/marcel/Dropbox/tu/sem2/:/home/marcel/Dropbox/tu/sem1/'
+export CDPATH='/home/marcel/Dropbox/tu/tor/:/home/marcel/Dropbox/tu/sem3/:/home/marcel/Dropbox/tu/sem2/:/home/marcel/Dropbox/tu/sem1/'
 
 # personal aliases
 alias c='clear'
@@ -33,7 +34,8 @@ function pw () {
   echo
 }
 function maclookup() {
-  curl http://www.macvendorlookup.com/api/v2/$1 2>/dev/null | python -m json.tool;
+  curl -s http://api.macvendors.com/$1;
+  echo;
 }
 
 # attach to tmux
