@@ -18,6 +18,7 @@ export EDITOR="vim"
 export GOPATH="$HOME/Dropbox/Programmieren/Go"
 export PATH=$PATH:$GOPATH/bin:/sbin:$HOME/.local/bin
 export CDPATH='/home/marcel/Dropbox/tu/tor/:/home/marcel/Dropbox/tu/sem3/:/home/marcel/Dropbox/tu/sem2/:/home/marcel/Dropbox/tu/sem1/'
+export MTR_OPTIONS='-y2'
 
 # personal aliases
 alias c='clear'
@@ -27,6 +28,7 @@ alias psgrep='ps aux | head -n 1; ps aux | grep -v grep | grep $1'
 alias cdtmp='cd $(mktemp -d)'
 alias gpg='gpg2'
 alias w='source ~/config-files/watch.sh'
+alias addr='ip addr show $((ip -6 route show | grep default | grep -oP "(?<=dev )\S*"; ip route show | grep default | grep -oP "(?<=dev )\S*") | sort | uniq)'
 
 alias myip='dig +short @resolver1.opendns.com myip.opendns.com'
 function pw () {
@@ -36,6 +38,13 @@ function pw () {
 function maclookup() {
   curl -s http://api.macvendors.com/$1;
   echo;
+}
+
+# change prompt to red color when logged in over SSH or as non default user
+prompt_context() {
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+    prompt_segment red black "%(!.%{%F{yellow}%}.)$USER@%m"
+  fi
 }
 
 # attach to tmux
