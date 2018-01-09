@@ -6,7 +6,7 @@ ZSH_THEME="agnoster"
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git ubuntu bgnotify ssh-agent common-aliases)
+plugins=(git ubuntu bgnotify ssh-agent common-aliases systemd)
 DEFAULT_USER=marcel
 
 source $ZSH/oh-my-zsh.sh
